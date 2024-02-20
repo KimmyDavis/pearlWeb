@@ -535,9 +535,13 @@ a{
 }
 .developer-info > p{
     font-size: var(--font-size-medium);
-    line-height: 1.5;
+    line-height: 18px;
     padding-block-start: 20px;
     text-align: center;
+}
+.developer-info > p:last-child{
+    font-size: 1.8em;
+    padding-bottom: 30px;
 }
 .developer-info > img{
     width: 50%;
@@ -578,7 +582,7 @@ a{
     section.body{
             position: relative;
             width: 50%;
-            left: 0%;
+            left: 15px;
             overflow: hidden;
             top: var(--header-height);
         }
@@ -588,23 +592,21 @@ a{
 
     
     section.body > .contact-us{
-            padding-top: 150px;
+            padding-top: 0px;
             width: 25%;
             height: 100vh;
             position: fixed;
             left: 0px;
             top: 0px;
         }
-        section.body > .contact-us > p:is(:not(:first-child)){
-            padding-block: 40px;
+        section.body .contact-us p,section.body .contact-us a:last-child{
+            font-size: 1em;
         }
         section.body > .contact-us > .handles > .logo{
             display: none;
         }
-        section.body > .contact-us > .handles > p:is(:not(last-child)){
-            position: absolute;
-            left: 40%;
-            top: 90%;
+        section.body > .contact-us > .handles > p{
+            text-align: left;
         }
         section.body > .contact-us > .handles > p:last-of-type{
             display: none;
